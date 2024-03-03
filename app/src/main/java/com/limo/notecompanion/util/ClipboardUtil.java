@@ -37,7 +37,7 @@ public class ClipboardUtil {
         // Add image to MediaStore
         ContentValues contentValues = new ContentValues();
         contentValues.put(MediaStore.Images.Media.DISPLAY_NAME, fileName);
-        contentValues.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg"); // Specify PNG MIME type
+        contentValues.put(MediaStore.Images.Media.MIME_TYPE, "image/png"); // Specify PNG MIME type
 
         ContentResolver contentResolver = context.getContentResolver();
         Uri uri = contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
