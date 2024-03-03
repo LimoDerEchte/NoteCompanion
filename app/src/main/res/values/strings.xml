@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">NoteCompanion</string>
     <string name="latex_quick_equation_editor">LaTeX Quick Equation Editor</string>
-    <string name="steganography">Integrate Code with Steganography on copy</string>
+    <string name="steganography">Integrate Code with Steganography on copy (WIP)</string>
     <string name="copy_image">Copy Image</string>
-    <string name="paste_image">Paste Image</string>
+    <string name="paste_image">Paste Image (WIP)</string>
     <string name="texViewDesc">Compiled LaTeX Formula</string>
+    <string name="copyright">Copyright © 2024 by Julian Vogel</string>
 </resources>
