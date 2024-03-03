@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NoteCompanion</string>
+    <string name="latex_quick_equation_editor">LaTeX Quick Equation Editor</string>
+    <string name="steganography">Integrate Code with Steganography on copy</string>
+    <string name="copy_image">Copy Image</string>
+    <string name="paste_image">Paste Image</string>
+    <string name="texViewDesc">Compiled LaTeX Formula</string>
+</resources>
