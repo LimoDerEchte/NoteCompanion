@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">NoteCompanion</string>
-    <string name="app_name_space">Note Companion</string>
+    <string name="app_name">Note Companion</string>
     <string name="copyright">Copyright © 2024 by Julian Vogel</string>
-    <string name="version">Alpha 1.0</string>
+    <string name="version">Alpha 1.1</string>
 
     <string name="latex_editor">LaTeX Quick Equation Editor</string>
     <string name="reaction_editor">Chemical Reaction Editor</string>
@@ -11,4 +10,5 @@
     <string name="copy_image">Copy Image</string>
     <string name="paste_image">Paste Image (WIP)</string>
     <string name="texViewDesc">Compiled LaTeX Formula</string>
+    <string name="appIconDesc">App Icon</string>
 </resources>

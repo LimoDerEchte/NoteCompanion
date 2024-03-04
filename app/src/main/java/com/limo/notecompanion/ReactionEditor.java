@@ -53,6 +53,7 @@ public class ReactionEditor extends AppCompatActivity {
         integrateStego = findViewById(R.id.integrateSteganography);
         imageView = findViewById(R.id.texView);
         editText = findViewById(R.id.editTexCode);
+        imageView.setClipToOutline(true);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) { }
