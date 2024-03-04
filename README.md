@@ -20,7 +20,7 @@ Tutorial WIP
 
 <h3>Chemical Reaction Editor</h3>
 You can write chemical components using a string like 3 H2O^2+ => 3 H<sub>2</sub>O<sup>2+</sup><br>
-If you use --> a big line to the right will appear. This is also the center of alignment.<br>
+If you use --> a big line to the right will appear. This is also the center of alignment.<br><br>
 
 Rules:
 - A number in front of a letter is written like a letter.
