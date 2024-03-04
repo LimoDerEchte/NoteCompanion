@@ -4,6 +4,7 @@ import android.app.UiModeManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.google.android.material.switchmaterial.SwitchMaterial;
@@ -35,6 +36,18 @@ public class MainActivity extends AppCompatActivity {
             if(desktopMode.isChecked())
                 intent.setFlags(Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
             startActivity(intent);
+        });
+        findViewById(R.id.githubButton).setOnClickListener((e) -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/LimoDerEchte/NoteCompanion"));
+            startActivity(browserIntent);
+        });
+        findViewById(R.id.webButton).setOnClickListener((e) -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://foxteargames.eu/notecompanion"));
+            startActivity(browserIntent);
+        });
+        findViewById(R.id.youtubeButton).setOnClickListener((e) -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/@LimoDieFlasche"));
+            startActivity(browserIntent);
         });
         findViewById(R.id.icon).setClipToOutline(true);
     }
