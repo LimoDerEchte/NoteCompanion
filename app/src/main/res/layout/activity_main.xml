@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@drawable/background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_gravity="center"
@@ -47,7 +48,7 @@
                 android:layout_marginStart="10sp"
                 android:text="@string/version"
                 android:textSize="15sp"
-                android:textColor="@color/material_dynamic_neutral60"
+                android:textColor="@color/neutral60"
                 android:textAlignment="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,6 +76,7 @@
                 android:layout_width="35sp"
                 android:layout_height="35sp"
                 android:layout_marginTop="25sp"
+                app:tint="@color/neutral90"
                 app:layout_constraintTop_toBottomOf="@id/chemics_button"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/webButton"
@@ -85,6 +87,7 @@
                 android:layout_width="35sp"
                 android:layout_height="35sp"
                 android:layout_marginTop="25sp"
+                app:tint="@color/neutral90"
                 app:layout_constraintTop_toBottomOf="@id/chemics_button"
                 app:layout_constraintStart_toEndOf="@id/githubButton"
                 app:layout_constraintEnd_toStartOf="@+id/youtubeButton"
@@ -95,6 +98,7 @@
                 android:layout_width="35sp"
                 android:layout_height="35sp"
                 android:layout_marginTop="25sp"
+                app:tint="@color/neutral90"
                 app:layout_constraintTop_toBottomOf="@id/chemics_button"
                 app:layout_constraintStart_toEndOf="@id/webButton"
                 app:layout_constraintEnd_toStartOf="@+id/discordButton"
@@ -105,7 +109,7 @@
                 android:layout_width="35sp"
                 android:layout_height="35sp"
                 android:layout_marginTop="25sp"
-                android:tint="@color/material_dynamic_neutral40"
+                app:tint="@color/neutral60"
                 app:layout_constraintTop_toBottomOf="@id/chemics_button"
                 app:layout_constraintStart_toEndOf="@id/youtubeButton"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +120,7 @@
     <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/desktopModeSwitch"
             android:text="@string/desktop_mode"
-            android:textColor="@color/material_dynamic_neutral50"
+            android:textColor="@color/neutral50"
             app:layout_constraintStart_toStartOf="@id/copyright"
             app:layout_constraintEnd_toEndOf="@id/copyright"
             app:layout_constraintBottom_toTopOf="@id/copyright"
@@ -128,7 +132,7 @@
     <TextView
             android:layout_margin="10sp"
             android:text="@string/copyright"
-            android:textColor="@color/material_dynamic_neutral50"
+            android:textColor="@color/neutral50"
             android:textAlignment="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

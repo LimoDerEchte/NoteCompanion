@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="neutral90">@color/material_dynamic_neutral10</color>
-    <color name="neutral60">@color/material_dynamic_neutral30</color>
-    <color name="neutral50">@color/material_dynamic_neutral40</color>
+    <color name="neutral90">@color/material_dynamic_neutral90</color>
+    <color name="neutral60">@color/material_dynamic_neutral60</color>
+    <color name="neutral50">@color/material_dynamic_neutral50</color>
 </resources>
