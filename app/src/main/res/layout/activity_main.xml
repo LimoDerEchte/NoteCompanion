@@ -9,9 +9,10 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_gravity="center"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30sp"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="400sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +29,7 @@
                 android:src="@drawable/icon"
                 android:background="@drawable/layout_rounded"
                 android:contentDescription="@string/appIconDesc"/>
+
         <TextView
                 android:layout_marginTop="25sp"
                 android:layout_marginEnd="70sp"
@@ -51,6 +53,7 @@
                 app:layout_constraintLeft_toRightOf="@id/title"
                 app:layout_constraintTop_toBottomOf="@id/icon"
                 android:id="@+id/version"/>
+
         <Button
                 android:text="@string/latex_editor"
                 android:layout_width="match_parent"
@@ -65,8 +68,48 @@
                 app:layout_constraintTop_toBottomOf="@id/latex_button"
                 android:id="@+id/chemics_button"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+                android:id="@+id/githubButton"
+                android:src="@drawable/github_icon"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="25sp"
+                app:layout_constraintTop_toBottomOf="@id/chemics_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/webButton"
+                android:contentDescription="@string/appIconDesc"/>
+        <ImageView
+                android:id="@+id/webButton"
+                android:src="@drawable/web_icon"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="25sp"
+                app:layout_constraintTop_toBottomOf="@id/chemics_button"
+                app:layout_constraintStart_toEndOf="@id/githubButton"
+                app:layout_constraintEnd_toStartOf="@+id/youtubeButton"
+                android:contentDescription="@string/appIconDesc"/>
+        <ImageView
+                android:id="@+id/youtubeButton"
+                android:src="@drawable/youtube_icon"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="25sp"
+                app:layout_constraintTop_toBottomOf="@id/chemics_button"
+                app:layout_constraintStart_toEndOf="@id/webButton"
+                app:layout_constraintEnd_toStartOf="@+id/discordButton"
+                android:contentDescription="@string/appIconDesc"/>
+        <ImageView
+                android:id="@+id/discordButton"
+                android:src="@drawable/discord_icon"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="25sp"
+                app:layout_constraintTop_toBottomOf="@id/chemics_button"
+                app:layout_constraintStart_toEndOf="@id/youtubeButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/appIconDesc"/>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <TextView
             android:layout_margin="10sp"
             android:text="@string/copyright"
