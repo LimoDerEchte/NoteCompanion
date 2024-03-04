@@ -14,7 +14,7 @@
             android:id="@+id/mainLayout">
 
         <TextView
-                android:text="@string/latex_quick_equation_editor"
+                android:text="@string/latex_editor"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"

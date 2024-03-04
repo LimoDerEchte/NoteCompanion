@@ -12,8 +12,6 @@ import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.limo.notecompanion.databinding.LatexEditorBinding;
 import com.limo.notecompanion.util.ClipboardUtil;
 import com.limo.notecompanion.util.SteganographyImgProcess;
-import maximsblog.blogspot.com.jlatexmath.cache.JLaTeXMathCache;
-import maximsblog.blogspot.com.jlatexmath.core.AjLatexMath;
 import maximsblog.blogspot.com.jlatexmath.core.TeXConstants;
 import maximsblog.blogspot.com.jlatexmath.core.TeXFormula;
 
@@ -30,9 +28,6 @@ public class LatexEditor extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        AjLatexMath.init(this);
-        JLaTeXMathCache.setMaxCachedObjects(100);
 
         LatexEditorBinding binding = LatexEditorBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

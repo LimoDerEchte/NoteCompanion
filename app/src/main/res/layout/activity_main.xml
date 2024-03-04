@@ -18,20 +18,39 @@
             app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+                android:layout_marginRight="60sp"
                 android:text="@string/app_name"
                 android:textSize="30sp"
                 android:textAlignment="center"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
-                android:id="@+id/title"/>
+                android:id="@+id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:layout_margin="5sp"
+                android:text="@string/version"
+                android:textColor="@color/material_dynamic_neutral50"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/title"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/version"/>
         <Button
-                android:text="@string/latex_quick_equation_editor"
+                android:text="@string/latex_editor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20sp"
                 app:layout_constraintTop_toBottomOf="@id/title"
                 android:id="@+id/latex_button"/>
+        <Button
+                android:text="@string/reaction_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/latex_button"
+                android:id="@+id/chemics_button"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">NoteCompanion</string>
-    <string name="latex_quick_equation_editor">LaTeX Quick Equation Editor</string>
+    <string name="app_name_space">Note Companion</string>
+    <string name="copyright">Copyright © 2024 by Julian Vogel</string>
+    <string name="version">Alpha 1.0</string>
+
+    <string name="latex_editor">LaTeX Quick Equation Editor</string>
+    <string name="reaction_editor">Chemical Reaction Editor</string>
+
     <string name="steganography">Integrate Code with Steganography on copy (WIP)</string>
     <string name="copy_image">Copy Image</string>
     <string name="paste_image">Paste Image (WIP)</string>
     <string name="texViewDesc">Compiled LaTeX Formula</string>
-    <string name="copyright">Copyright © 2024 by Julian Vogel</string>
 </resources>
