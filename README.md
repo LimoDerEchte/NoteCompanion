@@ -5,10 +5,12 @@ The app is heavily work in progress and updated continously based on my own expe
 <h2>Current and Planned Features</h4>
 This is a list of all features in the app. This is updated frequently.
 
-| Feature                 | Description                                         | Progress |
+| Feature                | Description                                       | Progress |
 |-------------------------|-----------------------------------------------------|----------|
-| LaTeX Equations (Short) | Renders LaTeX code that is modified for convenience | Done     |
+| LaTeX Equations (Short) | Renders LaTeX code that is modified for convenience | 75%      |
 | Chemical Reactions      | Renders Chemical Reactions from simple text         | Done     |
+| Triangles Creator       | Enables you to create a Render of a given triangle  | Planned  |
+| Graph Plotter           | Enables you to plot functions into a graph          | Planned  |
 | Source in Steganography | Integrates the user input into the rendered image   | Planned  |
 
 
