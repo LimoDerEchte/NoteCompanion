@@ -20,9 +20,9 @@ Tutorial WIP
 
 <h3>Chemical Reaction Editor</h3>
 You can write chemical components using a string like 3 H2O^2+ => 3 H<sub>2</sub>O<sup>2+</sup><br>
-If you use --> a big line to the right will appear. This is also the center of alignment.
+If you use --> a big line to the right will appear. This is also the center of alignment.<br>
 
-<h5>Rules:</h5>
+Rules:
 - A number in front of a letter is written like a letter.
 - A number behind a non-space and non-number is <sub>lowered</sub>
 - A number behind a ^ is <sup>ceiled</sup> (Including + and -)
