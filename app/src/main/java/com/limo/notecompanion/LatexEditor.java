@@ -45,13 +45,20 @@ public class LatexEditor extends AppCompatActivity {
                 isEncoded = false;
                 try {
                     StringBuilder builder = new StringBuilder();
-                    String[] lines = charSequence.toString().split("\\\\\\\\\\\\\\\\|\\n");
+                    String[] lines = charSequence.toString().split("\\\\\\\\|\\n");
                     int minTabs = 3;
+                    for(String line : lines) {
+                        int tabs = line.split("=").length;
+                        if(tabs > minTabs)
+                            minTabs = tabs;
+                    }
                     for(int i = 0; i < lines.length; i++) {
                         if(i == 0) {
                             if(lines[i].startsWith("#align ")) {
                                 List<String> list = new ArrayList<>();
                                 for (char c : lines[i].substring(7).toCharArray()) {
+                                    if(c != 'l' && c != 'c' && c != 'r')
+                                        break;
                                     list.add(String.valueOf(c));
                                 }
                                 minTabs = list.size();
@@ -67,13 +74,13 @@ public class LatexEditor extends AppCompatActivity {
                         builder .append("$")
                                 .append(lines[i]
                                         .replace("=", "$ & $=$ & $")
-                                        .replace("\\tab", "&& "))
+                                        .replace("\\tab", "$&&$"))
                                 .append("$");
                         int tabs = lines[i].split("=").length;
                         if(tabs > 0)
                             tabs = tabs * 2 - 1;
                         for(int i2 = tabs; i2 < minTabs; i2++) {
-                            builder.append("&");
+                            builder.append(" & ");
                         }
                         builder.append("\\\\\n");
                     }
