@@ -46,7 +46,8 @@
                 android:layout_marginTop="25sp"
                 android:layout_marginStart="10sp"
                 android:text="@string/version"
-                android:textColor="@color/material_dynamic_neutral50"
+                android:textSize="15sp"
+                android:textColor="@color/material_dynamic_neutral60"
                 android:textAlignment="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -110,14 +111,28 @@
                 android:contentDescription="@string/appIconDesc"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/desktopModeSwitch"
+            android:text="@string/desktop_mode"
+            android:textColor="@color/material_dynamic_neutral50"
+            app:layout_constraintStart_toStartOf="@id/copyright"
+            app:layout_constraintEnd_toEndOf="@id/copyright"
+            app:layout_constraintBottom_toTopOf="@id/copyright"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="10sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
     <TextView
             android:layout_margin="10sp"
             android:text="@string/copyright"
             android:textColor="@color/material_dynamic_neutral50"
             android:textAlignment="center"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:id="@+id/copyright"/>
+            android:id="@+id/copyright" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

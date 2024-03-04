@@ -21,6 +21,8 @@ public class ClipboardUtil {
     public static void copyBitmapToClipboard(Context context, Bitmap bitmap) {
         // Save bitmap to external storage
         String fileName = "image_" + System.currentTimeMillis() + ".png";
+
+        /*
         File imagesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
         File imageFile = new File(imagesDir, fileName);
 
@@ -32,7 +34,7 @@ public class ClipboardUtil {
             Log.e("SaveBitmap", "Error saving bitmap", e);
             Toast.makeText(context, "Failed to save image", Toast.LENGTH_SHORT).show();
             return;
-        }
+        }*/
 
         // Add image to MediaStore
         ContentValues contentValues = new ContentValues();
