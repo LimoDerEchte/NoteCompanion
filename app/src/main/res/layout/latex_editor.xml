@@ -82,6 +82,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/copy"
+                    android:backgroundTint="@color/neutral90"
                     app:layout_constraintBaseline_toBaselineOf="@+id/paste"
                     app:layout_constraintEnd_toStartOf="@+id/paste"
                     app:layout_constraintStart_toStartOf="parent"

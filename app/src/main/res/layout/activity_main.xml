@@ -61,12 +61,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20sp"
+                android:backgroundTint="@color/neutral90"
                 app:layout_constraintTop_toBottomOf="@id/title"
                 android:id="@+id/latex_button"/>
         <Button
                 android:text="@string/reaction_editor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/neutral90"
                 app:layout_constraintTop_toBottomOf="@id/latex_button"
                 android:id="@+id/chemics_button"/>
 
