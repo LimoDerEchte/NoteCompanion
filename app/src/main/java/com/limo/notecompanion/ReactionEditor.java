@@ -115,9 +115,8 @@ public class ReactionEditor extends AppCompatActivity {
                     if(lines.length > 0)
                         builder.append("\\end{tabular}\\]");
 
-                    System.out.println(builder);
                     TeXFormula tf = new TeXFormula(builder.toString());
-                    imageView.setImageBitmap(currentBitmap = tf.createBufferedImage(TeXConstants.STYLE_DISPLAY, 30, null, null));
+                    imageView.setImageBitmap(currentBitmap = tf.createBufferedImage(TeXConstants.STYLE_DISPLAY, 30, getResources().getColor(R.color.neutral90, getTheme()), null));
                 } catch (Exception e) {
                     // e.printStackTrace();
                 }

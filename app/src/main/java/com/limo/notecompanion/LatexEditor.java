@@ -35,7 +35,6 @@ public class LatexEditor extends AppCompatActivity {
         integrateStego = findViewById(R.id.integrateSteganography);
         imageView = findViewById(R.id.texView);
         editText = findViewById(R.id.editTexCode);
-        imageView.setClipToOutline(true);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) { }
@@ -74,7 +73,7 @@ public class LatexEditor extends AppCompatActivity {
                         builder .append("$")
                                 .append(lines[i]
                                         .replace("=", "$ & $=$ & $")
-                                        .replace("\\tab", "$&&$"))
+                                        .replace("\\tab", "$ & & $"))
                                 .append("$");
                         int tabs = lines[i].split("=").length;
                         if(tabs > 0)
@@ -89,7 +88,7 @@ public class LatexEditor extends AppCompatActivity {
 
                     System.out.println(builder);
                     TeXFormula tf = new TeXFormula(builder.toString());
-                    imageView.setImageBitmap(currentBitmap = tf.createBufferedImage(TeXConstants.STYLE_DISPLAY, 30, null, null));
+                    imageView.setImageBitmap(currentBitmap = tf.createBufferedImage(TeXConstants.STYLE_DISPLAY, 30, getResources().getColor(R.color.neutral90, getTheme()), null));
                 } catch (Exception e) {
                     // e.printStackTrace();
                 }
