@@ -293,7 +293,7 @@ public final class JLaTeXMathCache {
 		Bitmap image = Bitmap.createBitmap(icon.getIconWidth(),
 				icon.getIconHeight(), Config.ARGB_8888);
 		Canvas g2 = new Canvas(image);
-		icon.paintIcon(g2, 0, 0);
+		icon.paintIcon(g2, 0, 0, null);
 		cached.setDimensions(icon.getIconWidth(), icon.getIconHeight(),
 				icon.getIconDepth());
 		SoftReference<CachedImage> img = new SoftReference<CachedImage>(

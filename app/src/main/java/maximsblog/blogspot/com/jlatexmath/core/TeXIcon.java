@@ -229,13 +229,14 @@ public class TeXIcon {
 	/**
 	 * Paint the {@link TeXFormula} that created this icon.
 	 */
-	public void paintIcon(Canvas g, int x, int y) {
-		Canvas g2 = (Canvas) g;
+	public void paintIcon(Canvas g, int x, int y, Integer color) {
+        g.scale(size, size); // the point size
 
-		g2.scale(size, size); // the point size
+		if(color != null)
+			box.foreground = color;
 
 		// draw formula box
-		box.draw(g2, (x + insets.left) / size,
+		box.draw(g, (x + insets.left) / size,
 				(y + insets.top) / size + box.getHeight());
 	}
 }

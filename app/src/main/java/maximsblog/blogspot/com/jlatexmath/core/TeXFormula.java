@@ -945,9 +945,7 @@ public class TeXFormula {
 			st.setColor(bg);
 			g2.drawRect(0, 0, w, h, st);
 		}
-
-		icon.setForeground(fg == null ? Color.BLACK : fg);
-		icon.paintIcon(g2, 0, 0);
+		icon.paintIcon(g2, 0, 0, fg == null ? Color.BLACK : fg);
 		File file = new File(out);
 		FileOutputStream imout = new FileOutputStream(file);
 		image.compress(format, 90, imout);
@@ -979,8 +977,6 @@ public class TeXFormula {
 	 *            the style
 	 * @param size
 	 *            the size
-	 * @param transparency
-	 *            , if true the background is transparent
 	 * @return the generated image
 	 */
 	public static Bitmap createBufferedImage(String formula, int style,
@@ -998,9 +994,7 @@ public class TeXFormula {
 			st.setColor(bg);
 			g2.drawRect(0, 0, w, h, st);
 		}
-
-		icon.setForeground(fg == null ? Color.BLACK : fg);
-		icon.paintIcon(g2, 0, 0);
+		icon.paintIcon(g2, 0, 0, fg == null ? Color.BLACK : fg);
 
 		return image;
 	}
@@ -1012,8 +1006,7 @@ public class TeXFormula {
 	 *            the size
 	 * @return the generated image
 	 */
-	public Bitmap createBufferedImage(int style, float size, Integer fg,
-			Integer bg) throws ParseException {
+	public Bitmap createBufferedImage(int style, float size, Integer fg, Integer bg) throws ParseException {
 		TeXIcon icon = createTeXIcon(style, size);
 		icon.setInsets(new Insets(2, 2, 2, 2));
 		int w = icon.getIconWidth(), h = icon.getIconHeight();
@@ -1026,10 +1019,7 @@ public class TeXFormula {
 			st.setColor(bg);
 			g2.drawRect(0, 0, w, h, st);
 		}
-
-		icon.setForeground(fg == null ? Color.BLACK : fg);
-		icon.paintIcon(g2, 0, 0);
-
+		icon.paintIcon(g2, 0, 0, fg == null ? Color.BLACK : fg);
 		return image;
 	}
 
