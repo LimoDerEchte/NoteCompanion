@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Note Companion</string>
     <string name="copyright" translatable="false">Copyright © 2024 by Julian Vogel</string>
-    <string name="version" translatable="false">Alpha 1.1</string>
+    <string name="version" translatable="false">Alpha 1.2</string>
 
     <string name="settings">App Settings</string>
     <string name="latex_editor">LaTeX Quick Equation Editor</string>
