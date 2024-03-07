@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Note Companion</string>
-    <string name="copyright">Copyright © 2024 by Julian Vogel</string>
-    <string name="version">Alpha 1.1</string>
-    <string name="desktop_mode">Multi-Window-Mode</string>
+    <string name="app_name" translatable="false">Note Companion</string>
+    <string name="copyright" translatable="false">Copyright © 2024 by Julian Vogel</string>
+    <string name="version" translatable="false">Alpha 1.1</string>
 
+    <string name="settings">App Settings</string>
     <string name="latex_editor">LaTeX Quick Equation Editor</string>
     <string name="reaction_editor">Chemical Reaction Editor</string>
 
@@ -11,5 +11,27 @@
     <string name="copy_image">Copy Image</string>
     <string name="paste_image">Paste Image (WIP)</string>
     <string name="texViewDesc">Compiled LaTeX Formula</string>
+
     <string name="appIconDesc">App Icon</string>
+    <string name="desktop_mode">Multi-Window-Mode</string>
+    <string name="save_button">Save</string>
+
+    <string name="language_selector">App Language</string>
+    <string-array name="languages">
+        <item>English</item>
+    </string-array>
+
+    <string name="app_theme_selector">App Theme</string>
+    <string-array name="app_themes">
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+
+    <string name="output_color_selector">Output Color</string>
+    <string-array name="output_color">
+        <item>From Preview</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Custom</item>
+    </string-array>
 </resources>
