@@ -15,6 +15,8 @@
     <string name="appIconDesc">App Icon</string>
     <string name="desktop_mode">Multi-Window-Mode</string>
     <string name="save_button">Save</string>
+    <string name="legal_1">LaTeX rendered using aJLaTeXMath by Maksim Bartosh</string>
+    <string name="legal_2">aJLaTeXMath is based on jlatexmath by opencollab</string>
 
     <string name="language_selector">App Language</string>
     <string-array name="languages">

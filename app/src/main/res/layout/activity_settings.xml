@@ -102,5 +102,35 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 
+        <TextView
+                android:id="@+id/copyright_notice"
+                android:layout_marginTop="35sp"
+                android:textAlignment="center"
+                android:text="@string/copyright"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/save_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+                android:id="@+id/ajlatexmath_notice"
+                android:layout_marginTop="8sp"
+                android:textAlignment="center"
+                android:text="@string/legal_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/copyright_notice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+                android:id="@+id/jlatexmath_notice"
+                android:textAlignment="center"
+                android:text="@string/legal_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ajlatexmath_notice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
