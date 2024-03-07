@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/@LimoDieFlasche"));
             startActivity(browserIntent);
         });
+        findViewById(R.id.discordButton).setOnClickListener((e) -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://discord.com/invite/zyxqnNja5a"));
+            startActivity(browserIntent);
+        });
         findViewById(R.id.icon).setClipToOutline(true);
     }
 }
