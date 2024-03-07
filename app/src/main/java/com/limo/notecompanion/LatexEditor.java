@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.limo.notecompanion.databinding.LatexEditorBinding;
 import com.limo.notecompanion.util.ClipboardUtil;
+import com.limo.notecompanion.util.Settings;
 import com.limo.notecompanion.util.SteganographyImgProcess;
 import maximsblog.blogspot.com.jlatexmath.core.TeXConstants;
 import maximsblog.blogspot.com.jlatexmath.core.TeXFormula;
@@ -31,6 +32,7 @@ public class LatexEditor extends AppCompatActivity {
 
         LatexEditorBinding binding = LatexEditorBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        Settings.applyThemeAndLanguage(this, getDelegate());
 
         integrateStego = findViewById(R.id.integrateSteganography);
         imageView = findViewById(R.id.texView);

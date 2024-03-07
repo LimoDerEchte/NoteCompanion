@@ -15,20 +15,21 @@ public class Settings {
     public static String exportColor;
     public static boolean desktopMode;
 
-    public static void load(Context ctx, AppCompatDelegate delegate) {
+    public static void load(Context ctx) {
         SharedPreferences pref = ctx.getSharedPreferences("default_settings", Context.MODE_PRIVATE);
 
         language = pref.getString("language", "en_us");
         theme = pref.getString("theme", "SYSTEM");
         exportColor = pref.getString("exportColor", "INHERIT");
         desktopMode = pref.getBoolean("desktopMode", isDesktopMode(ctx));
+    }
 
+    public static void applyThemeAndLanguage(Context ctx, AppCompatDelegate delegate) {
         ctx.getResources().getConfiguration().setLocale(new Locale(language));
         delegate.setLocalNightMode(theme.equalsIgnoreCase("SYSTEM") ?
                 AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM : theme.equalsIgnoreCase("LIGHT") ?
                 AppCompatDelegate.MODE_NIGHT_NO :
                 AppCompatDelegate.MODE_NIGHT_YES);
-        ctx.setTheme(theme.equalsIgnoreCase("DARK") ? R.style.Theme_NoteCompanion : R.style.Base_Theme_NoteCompanion);
     }
 
     public static void save(Context ctx) {

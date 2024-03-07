@@ -18,6 +18,7 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        Settings.load(this);
 
         theme = Settings.theme;
         exportColor = Settings.exportColor;
@@ -32,13 +33,16 @@ public class SettingsActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.app_themes, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         appThemeSpinner.setAdapter(adapter2);
-        appThemeSpinner.setSelection(0);
+        appThemeSpinner.setSelection(theme.equalsIgnoreCase("SYSTEM") ? 0 :
+                                     theme.equalsIgnoreCase("DARK") ? 1 : 2);
 
         Spinner outputColorSpinner = findViewById(R.id.output_color_selector);
         ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.output_color, android.R.layout.simple_spinner_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         outputColorSpinner.setAdapter(adapter3);
-        outputColorSpinner.setSelection(0);
+        outputColorSpinner.setSelection(exportColor.equalsIgnoreCase("INHERIT") ? 0 :
+                                        exportColor.equalsIgnoreCase("BLACK") ? 1 :
+                                        exportColor.equalsIgnoreCase("WHITE") ? 2 : 3);
 
         SwitchMaterial desktopMode = findViewById(R.id.desktopModeSwitch);
         desktopMode.setChecked(Settings.desktopMode);
@@ -91,9 +95,9 @@ public class SettingsActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.save_button).setOnClickListener((l) -> {
-            Settings.desktopMode = desktopMode.isChecked();
             Settings.theme = theme;
             Settings.exportColor = exportColor;
+            Settings.desktopMode = desktopMode.isChecked();
             Settings.save(this);
         });
     }
@@ -101,6 +105,5 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Settings.load(this, getDelegate());
     }
 }
