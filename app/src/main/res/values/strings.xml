@@ -25,6 +25,7 @@
 
     <string name="app_theme_selector">App Theme</string>
     <string-array name="app_themes">
+        <item>From System</item>
         <item>Dark</item>
         <item>Light</item>
     </string-array>
