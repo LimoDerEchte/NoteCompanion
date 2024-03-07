@@ -119,6 +119,17 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ImageView
+            android:id="@+id/settingsButton"
+            android:src="@drawable/settings_icon"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_margin="15sp"
+            app:tint="@color/neutral90"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/settings"/>
+
     <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/desktopModeSwitch"
             android:text="@string/desktop_mode"
