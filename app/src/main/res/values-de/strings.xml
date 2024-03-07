@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">App Einstellungen</string>
+    <string name="latex_editor">LaTeX-Schnelleditor für Gleichungen</string>
+    <string name="reaction_editor">Chemischer Reaktions Editor</string>
+
+    <string name="steganography">Code mit Steganografie integrieren</string>
+    <string name="copy_image">Bild Kopieren</string>
+    <string name="paste_image">Bild Einfügen (WIP)</string>
+    <string name="texViewDesc">Kompilierte LaTeX Formel</string>
+
+    <string name="appIconDesc">App Logo</string>
+    <string name="desktop_mode">Mehrfenstermodus</string>
+    <string name="save_button">Speichern</string>
+    <string name="legal_1">LaTeX gerendert mit aJLaTeXMath von Maksim Bartosh</string>
+    <string name="legal_2">aJLaTeXMath basiert auf jlatexmath von opencollab</string>
+
+    <string name="language_selector">App Sprache</string>
+
+    <string name="app_theme_selector">App Thema</string>
+    <string-array name="app_themes">
+        <item>Vom System</item>
+        <item>Dunkel</item>
+        <item>Hell</item>
+    </string-array>
+
+    <string name="output_color_selector">Farbe der Ausgabe</string>
+    <string-array name="output_color">
+        <item>Von der Vorschau</item>
+        <item>Schwarz</item>
+        <item>Weiß</item>
+        <item>Benutzerdefiniert</item>
+    </string-array>
+</resources>

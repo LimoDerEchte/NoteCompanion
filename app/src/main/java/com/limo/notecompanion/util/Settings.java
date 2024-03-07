@@ -17,8 +17,7 @@ public class Settings {
 
     public static void load(Context ctx) {
         SharedPreferences pref = ctx.getSharedPreferences("default_settings", Context.MODE_PRIVATE);
-
-        language = pref.getString("language", "en_us");
+        language = pref.getString("language", ctx.getResources().getConfiguration().getLocales().get(0).getLanguage());
         theme = pref.getString("theme", "SYSTEM");
         exportColor = pref.getString("exportColor", "INHERIT");
         desktopMode = pref.getBoolean("desktopMode", isDesktopMode(ctx));
