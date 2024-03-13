@@ -75,7 +75,10 @@ public class LatexEditor extends AppCompatActivity {
                         builder .append("$")
                                 .append(lines[i]
                                         .replace("=", "$ & $=$ & $")
-                                        .replace("\\tab", "$ & & $"))
+                                        .replace("\\tab", "$ & & $")
+                                        .replace("*", " \\cdot ")
+                                        .replace("•", " \\cdot ")
+                                        .replace("×", " \\cdot "))
                                 .append("$");
                         int tabs = lines[i].split("=").length;
                         if(tabs > 0)
