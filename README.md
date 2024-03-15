@@ -1,15 +1,15 @@
 <h1>NoteCompanion</h1>
-This is an android aimed at students who cant take proper notes in schook because most note taking apps dont support equations etc.<br>
-The app is heavily work in progress and updated continously based on my own experiences in school.
+This is an android aimed at students who cant take proper notes in school because most note-taking apps don't support equations etc.<br>
+The app is heavily work in progress and updated continuously based on my own experiences in school.
 
 <h2>Current and Planned Features</h4>
-This is a list of all features in the app. This is updated frequently.
+This is a list of all features in the app. This is updated frequently. <br>
 
 | Feature                 | Description                                         | Progress |
 |-------------------------|-----------------------------------------------------|----------|
 | LaTeX Equations (Short) | Renders LaTeX code that is modified for convenience | Done     |
 | Chemical Reactions      | Renders Chemical Reactions from simple text         | Done     |
-| Triangles Creator       | Enables you to create a Render of a given triangle  | Planned  |
+| Triangles Creator       | Enables you to create a Render of a given triangle  | Partial  |
 | Graph Plotter           | Enables you to plot functions into a graph          | Planned  |
 | Source in Steganography | Integrates the user input into the rendered image   | Planned  |
 
